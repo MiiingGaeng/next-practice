@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <header>
           <nav>
-            <ul className="nav-list">
+            <ul className="nav-list flex gap-5">
               <li className="nav-item">
                 <Link href={"/"}>Home(SSG)</Link>
               </li>
@@ -42,7 +42,7 @@ export default function RootLayout({
                 <Link href={"/blogs"}>Blogs(SSR)</Link>
               </li>
               <li className="nav-item">
-                <Link href={"/todolist"}>TodoList(CSR)</Link>
+                <Link href={"/todo-list"}>TodoList(CSR)</Link>
               </li>
             </ul>
           </nav>
