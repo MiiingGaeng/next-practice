@@ -22,3 +22,12 @@ export type blogItem = {
   createdAt: number;
   tags: string[];
 };
+
+export type todoItem = {
+  id: string;
+  title: string;
+  contents: string;
+  isCompleted: boolean;
+  imgPath: string;
+  createdAt: number;
+};

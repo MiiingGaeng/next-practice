@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Provider from "./provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,7 +48,7 @@ export default function RootLayout({
             </ul>
           </nav>
         </header>
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
